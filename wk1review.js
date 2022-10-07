@@ -62,16 +62,27 @@
 // // Using fromCharCode() - make it readable for us :). You'll see!
 
 // // Take your first and last name and concat()
+// let firtsName = "Tamiru"
+// let lastName ="Taye"
+// console.log("My name is " + firtsName+ " "+ lastName)
 
 // // Create a string and make it return true using startsWith()
+// const str = 'Software Engineering';
 
+// console.log(str.startsWith('Soft'));
 // // Now use any variable with endsWith() and return false
+// var  classOff = 'Software Engineering Departement';
+// console.log(classOff.endsWith('Departement!'));
 
 // // Finish the following sentence. Use includes() and return true.
-// const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
+
+//  const ozgur = 'Once upon a time Ozgur looked up at the Moon, sorry i do not finish this sentence'
+//  console.log(ozgur.includes("sorry i do not finish this sentence"));
 
 // // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
-// const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+// let joshAnimals =["lamb","hen", "lion","goat","cow","ox"]
+// console.log(joshAnimals.indexOf('cow'));
+//const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
 
 // ////////////////////////////////////////////////////////////////
 // // Boolean:
