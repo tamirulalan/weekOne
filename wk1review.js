@@ -4,15 +4,15 @@
 
 // //1. Write a JavaScript display the larger of two integers
 // //name a function called largest that accect two parameters
-function largest(a, b) { 
-	if(a > b)
-		return a;
-	else if(a === b)
-		return 0;
-	else
-		return b;
-}
-console.log(largest(2,3));
+// function largest(a, b) { 
+// 	if(a > b)
+// 		return a;
+// 	else if(a === b)
+// 		return 0;
+// 	else
+// 		return b;
+// }
+// console.log(largest(2,3));
 
 // /* 2. Write an if/else statement for the following requirements:
 
@@ -99,11 +99,19 @@ console.log(largest(2,3));
 // // Loops:
 // ///////////////////////////////////////////////////////////////
 // // Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
-
+// 
+// for (let i=1; i<=10;i++){
+//   console.log("Make Ken's room spin")
+// }
 // // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
-
+// for (let i=1; i<=20; i++){
+//   console,log("Make Teo's vision spin")
+// }
 // // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
-
+// let i=1
+// while(i<=20){
+//   console.log("I'm sorry")
+// }
 // // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
 
 // // To The Left! To The Left! Everything I want in the console to the left. Print thing1, thing2, thing 3 using (FOR IN LOOP)
@@ -112,16 +120,27 @@ console.log(largest(2,3));
 //     thing2: 'clothes',
 //     thing3: 'gaming console'
 //   }
+//   for (const property in whateverQueenBeySaid) {
+//     console.log(`${property}: ${whateverQueenBeySaid[property]}`);
+//   }
   
 //   // Using (FOR IN LOOP), print the indexes of the array.
-//   const lana = ['l', 'a', 'n', 'a']
+//  const lana = ['l', 'a', 'n', 'a']
+// for (const property in lana) {
+//   console.log(`${property}: ${lana[property]}`);
+// }
   
 //   // USE (FOR OF LOOP)!
-//   const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
+  // const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
+  // for (const element of tia) {
+  //   console.log(element);
+  // }
   
 //   // Look into forEach() loop, it accepts a callback aka a function inside a function. 
 //   // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
-//   const perscholas = ['Amira', 'Arely', 'Jonathan']
+// const perscholas = ['Amira', 'Arely', 'Jonathan']
+// perscholas.push("PS")
+// perscholas.forEach(element => console.log(element));
 
 // ////////////////////////////////////////////////////////////////
 // // Arrays:
@@ -152,6 +171,8 @@ console.log(largest(2,3));
 //   "fruit loops cereal"
 
 // ];
+// shoppingList.push("Hendricks")
+// console.log(shoppingList)
 
 // //3.  Use the force, or in this case the reverse method to help Yoda make some sense with his motivational talk to the young Jedi interns.*/
 
@@ -159,25 +180,25 @@ console.log(largest(2,3));
 
 //4. People been lining up for hours to get the newest iphone release. Help manage the unruly crowd of privileged customers by serving them one at a time and assiging it to a variable named `nowServing`. Console.log this new variable as well as the waitList.*/
 
-var waitList = [ "Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro" ];
-var nowServing =""
-while(waitList.length >0){
- nowServing = waitList.shift()
- console.log(nowServing)
-}
+// var waitList = [ "Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro" ];
+// var nowServing =""
+// while(waitList.length >0){
+//  nowServing = waitList.shift()
+//  console.log(nowServing)
+// }
 
 
 //5. Help Nike sell more overpriced sneakers by changing their slogan from an array into a string. Convert the shoe array and assign it to a variable named `shoeString`. Console.log this new variable.
 
-var shoe = ["just", "do", "it"];
-var shoeString = ""
-for (let i=0; i<shoe.length; i++){
-  shoeString +=shoe[i] +" " 
-}
-console.log(shoeString )
+// var shoe = ["just", "do", "it"];
+// var shoeString = ""
+// for (let i=0; i<shoe.length; i++){
+//   shoeString +=shoe[i] +" " 
+// }
+// console.log(shoeString )
 
- var s = shoe.join(" ")
- console.log(s)
+//  var s = shoe.join(" ")
+//  console.log(s)
 // ===== SPREAD OPERATOR ===== 
 
 // Create a variable and assign a value of a copied array using the spread operator
@@ -191,12 +212,66 @@ console.log(shoeString )
 // Don't forget to CALL your functions
 
 //1. Write a function maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript. Do some googling to figure this out if you forget how conditionals work.
-
+// function  maxOfTwoNumbers(a, b){
+//       if(a >= b){
+//          return a
+//       } else{
+//         return b
+//       } 
+//      }
+// console.log(maxOfTwoNumbers(1,2))
 //2. Write a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+// function get_max(x, y, z)
+// {
+//     var max = Math.max(x, y, z);
+//     return max;
+// }
 
+// console.log(get_max(1,3,5)); 
 //3. Write a function isCharacterAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise
+//  function isCharacterAVowel (c)
+//     { 
+//         if (c == 'a' || c == 'e' || c == 'i' || c == 'o'
+//             || c == 'u') {
+//             console.log('true'); 
+//         }else{
+//             console.log("false"); 
+//     } }
+//     isCharacterAVowel('a')
 
 //4. Write a function charCount that takes a string and returns the length of the string.
+// function charCount(str)
+// {
+    
+//     var f  = {};
 
+//     for(let i =0;i<str.length;i++)
+//     {
+//         if(str[i] !== " ")
+//         {
+//             f[str[i]] = f[str[i]] + 1 || 1 
+//         }
+//     }
+//   return(f);   
+// }
+// console.log(charCount("week one is over"))
 //5. Write a function vowelCount that takes a String and returns the number of vowels in the String. Add a check for the string to be of 10 or less characters.
+  
+//I will modify this one
 
+
+// function numOfVowels(string) {
+//   let count = 0;
+
+//   string = string.split('');
+
+//   const vowels = function(string) {
+//     for (let i = 0; i > string.length; i++) {
+//       if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u'){
+//         count+= 1;
+//       }
+//       return count;
+//     }
+//   };
+// }
+// console.log(numOfVowels('Yellow Submarine'));
